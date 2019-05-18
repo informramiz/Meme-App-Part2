@@ -13,6 +13,7 @@
 		18361BCE22810780002FB618 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18361BCD22810780002FB618 /* Assets.xcassets */; };
 		18361BD122810780002FB618 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18361BCF22810780002FB618 /* LaunchScreen.storyboard */; };
 		18B6FC0522905D880052F86B /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B6FC0422905D880052F86B /* TableViewCell.swift */; };
+		18B6FC0822905ECB0052F86B /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B6FC0722905ECB0052F86B /* TableViewController.swift */; };
 		18D74AAC2287867200F7F761 /* Meme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D74AAB2287867200F7F761 /* Meme.swift */; };
 		18F685C72283814F00D0A986 /* ColorizerTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F685C52283814F00D0A986 /* ColorizerTextFieldDelegate.swift */; };
 		18F685C82283814F00D0A986 /* EmojiTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F685C62283814F00D0A986 /* EmojiTextFieldDelegate.swift */; };
@@ -29,6 +30,7 @@
 		18361BD022810780002FB618 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18361BD222810780002FB618 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18B6FC0422905D880052F86B /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		18B6FC0722905ECB0052F86B /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		18D74AAB2287867200F7F761 /* Meme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meme.swift; sourceTree = "<group>"; };
 		18F685C52283814F00D0A986 /* ColorizerTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorizerTextFieldDelegate.swift; sourceTree = "<group>"; };
 		18F685C62283814F00D0A986 /* EmojiTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiTextFieldDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 		18361BC52281077F002FB618 /* MemeMe */ = {
 			isa = PBXGroup;
 			children = (
+				18B6FC0622905EA70052F86B /* displaycontrollers */,
 				18B6FC0322905D380052F86B /* cells */,
 				18D74AAA2287865900F7F761 /* models */,
 				18F685C4228380EC00D0A986 /* Text Field Delegates */,
@@ -85,6 +88,14 @@
 				18B6FC0422905D880052F86B /* TableViewCell.swift */,
 			);
 			path = cells;
+			sourceTree = "<group>";
+		};
+		18B6FC0622905EA70052F86B /* displaycontrollers */ = {
+			isa = PBXGroup;
+			children = (
+				18B6FC0722905ECB0052F86B /* TableViewController.swift */,
+			);
+			path = displaycontrollers;
 			sourceTree = "<group>";
 		};
 		18D74AAA2287865900F7F761 /* models */ = {
@@ -184,6 +195,7 @@
 				18F685C72283814F00D0A986 /* ColorizerTextFieldDelegate.swift in Sources */,
 				18F685CC2283B27200D0A986 /* CurrencyTextFieldDelegate.swift in Sources */,
 				18361BC72281077F002FB618 /* AppDelegate.swift in Sources */,
+				18B6FC0822905ECB0052F86B /* TableViewController.swift in Sources */,
 				18F685C82283814F00D0A986 /* EmojiTextFieldDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
