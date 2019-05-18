@@ -14,6 +14,8 @@
 		18361BD122810780002FB618 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18361BCF22810780002FB618 /* LaunchScreen.storyboard */; };
 		18B6FC0522905D880052F86B /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B6FC0422905D880052F86B /* TableViewCell.swift */; };
 		18B6FC0822905ECB0052F86B /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B6FC0722905ECB0052F86B /* TableViewController.swift */; };
+		18B6FC0C229092EE0052F86B /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B6FC0B229092EE0052F86B /* CollectionViewController.swift */; };
+		18B6FC0E22909BC70052F86B /* MemeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B6FC0D22909BC70052F86B /* MemeCollectionViewCell.swift */; };
 		18D74AAC2287867200F7F761 /* Meme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D74AAB2287867200F7F761 /* Meme.swift */; };
 		18F685C72283814F00D0A986 /* ColorizerTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F685C52283814F00D0A986 /* ColorizerTextFieldDelegate.swift */; };
 		18F685C82283814F00D0A986 /* EmojiTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F685C62283814F00D0A986 /* EmojiTextFieldDelegate.swift */; };
@@ -31,6 +33,8 @@
 		18361BD222810780002FB618 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18B6FC0422905D880052F86B /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		18B6FC0722905ECB0052F86B /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		18B6FC0B229092EE0052F86B /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		18B6FC0D22909BC70052F86B /* MemeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeCollectionViewCell.swift; sourceTree = "<group>"; };
 		18D74AAB2287867200F7F761 /* Meme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meme.swift; sourceTree = "<group>"; };
 		18F685C52283814F00D0A986 /* ColorizerTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorizerTextFieldDelegate.swift; sourceTree = "<group>"; };
 		18F685C62283814F00D0A986 /* EmojiTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiTextFieldDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				18B6FC0422905D880052F86B /* TableViewCell.swift */,
+				18B6FC0D22909BC70052F86B /* MemeCollectionViewCell.swift */,
 			);
 			path = cells;
 			sourceTree = "<group>";
@@ -94,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				18B6FC0722905ECB0052F86B /* TableViewController.swift */,
+				18B6FC0B229092EE0052F86B /* CollectionViewController.swift */,
 			);
 			path = displaycontrollers;
 			sourceTree = "<group>";
@@ -192,11 +198,13 @@
 				18B6FC0522905D880052F86B /* TableViewCell.swift in Sources */,
 				18361BC92281077F002FB618 /* ViewController.swift in Sources */,
 				18D74AAC2287867200F7F761 /* Meme.swift in Sources */,
+				18B6FC0E22909BC70052F86B /* MemeCollectionViewCell.swift in Sources */,
 				18F685C72283814F00D0A986 /* ColorizerTextFieldDelegate.swift in Sources */,
 				18F685CC2283B27200D0A986 /* CurrencyTextFieldDelegate.swift in Sources */,
 				18361BC72281077F002FB618 /* AppDelegate.swift in Sources */,
 				18B6FC0822905ECB0052F86B /* TableViewController.swift in Sources */,
 				18F685C82283814F00D0A986 /* EmojiTextFieldDelegate.swift in Sources */,
+				18B6FC0C229092EE0052F86B /* CollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
