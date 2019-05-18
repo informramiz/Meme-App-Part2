@@ -91,7 +91,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="87" id="3ZN-3n-1Sr">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="87" id="3ZN-3n-1Sr" customClass="TableViewCell" customModule="MemeMe" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="87"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3ZN-3n-1Sr" id="Gzk-ud-ZSw">
@@ -120,6 +120,10 @@
                                         <constraint firstItem="eP4-GQ-Kas" firstAttribute="centerY" secondItem="Gzk-ud-ZSw" secondAttribute="centerY" id="yIh-mk-mMq"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="label" destination="8Xp-XS-io3" id="1sF-0a-KE6"/>
+                                    <outlet property="memeImageView" destination="eP4-GQ-Kas" id="fN5-UD-CGN"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
