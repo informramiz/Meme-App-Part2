@@ -126,7 +126,7 @@ class CreateMemeViewController: UIViewController, UIImagePickerControllerDelegat
         let shareController = UIActivityViewController(activityItems: [meme.memedImage], applicationActivities: nil)
         shareController.completionWithItemsHandler = {_, success, _, error in
             if success {
-                self.saveMemedImage(meme.memedImage)
+                self.saveMemedImage(meme)
             } else {
                 let errorMsg = error?.localizedDescription ??  "Sharing cancelled"
                 self.showErrorAlert(errorMsg)
@@ -135,8 +135,9 @@ class CreateMemeViewController: UIViewController, UIImagePickerControllerDelegat
         present(shareController, animated: true, completion: nil)
     }
     
-    private func saveMemedImage(_ memeImage: UIImage) {
-        UIImageWriteToSavedPhotosAlbum(memeImage, self, #selector(onImageSaveResult(_:didFinishSavingWithError:contextInfo:)), nil)
+    private func saveMemedImage(_ meme: Meme) {
+        UIImageWriteToSavedPhotosAlbum(meme.memedImage, self, #selector(onImageSaveResult(_:didFinishSavingWithError:contextInfo:)), nil)
+        (UIApplication.shared.delegate as! AppDelegate).saveMeme(meme)
     }
     
     @objc private func onImageSaveResult(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {
