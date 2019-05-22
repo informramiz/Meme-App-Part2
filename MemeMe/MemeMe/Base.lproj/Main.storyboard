@@ -90,7 +90,7 @@
                             <outlet property="delegate" destination="smQ-8V-yUc" id="pFz-qG-fcP"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" title="Send Memes" id="bSV-Ji-Zge"/>
+                    <navigationItem key="navigationItem" title="Sent Memes" id="bSV-Ji-Zge"/>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="ShowMeme" id="WsK-IR-aQx"/>
                     </connections>
@@ -193,7 +193,7 @@
                                 </constraints>
                                 <items>
                                     <navigationItem title="MemeMe" id="F9a-4F-uDU">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="action" id="fBu-AS-hIP" userLabel="Share">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="add" id="fBu-AS-hIP" userLabel="Share">
                                             <connections>
                                                 <action selector="shareMeme:" destination="BYZ-38-t0r" id="XSd-8o-XxO"/>
                                             </connections>
