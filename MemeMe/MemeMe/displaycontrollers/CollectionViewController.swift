@@ -19,6 +19,11 @@ class CollectionViewController: UICollectionViewController {
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(onAddClick))
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        collectionView.reloadData()
+    }
+    
     @objc private func onAddClick() {
         performSegue(withIdentifier: "ShowMeme", sender: nil)
     }
