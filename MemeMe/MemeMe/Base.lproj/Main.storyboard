@@ -193,7 +193,7 @@
                                 </constraints>
                                 <items>
                                     <navigationItem title="MemeMe" id="F9a-4F-uDU">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="add" id="fBu-AS-hIP" userLabel="Share">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="action" id="fBu-AS-hIP" userLabel="Share">
                                             <connections>
                                                 <action selector="shareMeme:" destination="BYZ-38-t0r" id="XSd-8o-XxO"/>
                                             </connections>
