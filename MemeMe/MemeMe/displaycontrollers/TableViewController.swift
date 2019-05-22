@@ -23,4 +23,8 @@ class TableViewController: UITableViewController {
         memeCell.imageView?.image = UIImage(named: "table@1x.png")
         return memeCell
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "ShowMeme", sender: nil)
+    }
 }
