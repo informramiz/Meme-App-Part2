@@ -91,6 +91,9 @@
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" title="Send Memes" id="bSV-Ji-Zge"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="ShowMeme" id="WsK-IR-aQx"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rUn-gl-qqf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -279,4 +282,7 @@
         <image name="collection" width="30" height="30.5"/>
         <image name="table" width="30" height="30"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="WsK-IR-aQx"/>
+    </inferredMetricsTieBreakers>
 </document>
