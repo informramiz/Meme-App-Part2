@@ -62,7 +62,6 @@ class CreateMemeViewController: UIViewController, UIImagePickerControllerDelegat
     private func updateNavBarButtonsStatus() {
         let isImageLoad = imageView.image != nil
         shareButton.isEnabled = isImageLoad
-        cancelButton.isEnabled = isImageLoad
     }
     
     //MARK: Actions
@@ -106,8 +105,7 @@ class CreateMemeViewController: UIViewController, UIImagePickerControllerDelegat
     }
     
     @IBAction func cancel(_ sender: Any) {
-        imageView.image = nil
-        updateNavBarButtonsStatus()
+        dismiss(animated: true, completion: nil)
     }
     
     private func getMemedImage() -> UIImage {
