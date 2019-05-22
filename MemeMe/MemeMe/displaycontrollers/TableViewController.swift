@@ -9,18 +9,24 @@
 import UIKit
 
 class TableViewController: UITableViewController {
+    
+    private var memes: [Meme] {
+        return (UIApplication.shared.delegate as! AppDelegate).memes
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return memes.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let memeCell = tableView.dequeueReusableCell(withIdentifier: "MemeTableViewCell") as! TableViewCell
-        memeCell.imageView?.image = UIImage(named: "table@1x.png")
+        let meme = memes[indexPath.row]
+        memeCell.memeImageView.image = meme.memedImage
+        memeCell.label.text = meme.topText + ", " + meme.bottomText
         return memeCell
     }
     
