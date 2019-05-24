@@ -9,6 +9,7 @@
 import UIKit
 
 class TableViewController: UITableViewController {
+    private static let showMemeSegueIdentifier = "ShowMeme"
     
     private var memes: [Meme] {
         return (UIApplication.shared.delegate as! AppDelegate).memes
@@ -25,7 +26,7 @@ class TableViewController: UITableViewController {
     }
     
     @objc private func onAddClick() {
-        performSegue(withIdentifier: "ShowMeme", sender: nil)
+        performSegue(withIdentifier: TableViewController.showMemeSegueIdentifier, sender: nil)
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -41,6 +42,16 @@ class TableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let meme = memes[indexPath.row]
+        performSegue(withIdentifier: TableViewController.showMemeSegueIdentifier, sender: meme)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let meme = sender as? Meme
         
+        if let meme = meme {
+            let destination = segue.destination as! CreateMemeViewController
+            destination.meme = meme
+        }
     }
 }
