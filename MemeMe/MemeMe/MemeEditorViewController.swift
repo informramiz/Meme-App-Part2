@@ -19,8 +19,6 @@ class CreateMemeViewController: UIViewController, UIImagePickerControllerDelegat
     @IBOutlet weak var bottomTextField: UITextField!
     @IBOutlet weak var mediaOptionsToolbar: UIToolbar!
     
-    var meme: Meme?
-    
     //apply default text attributes for our text fields
     private let memeTextAttributes: [NSAttributedString.Key: Any] = [
         NSAttributedString.Key.strokeColor: UIColor.black,
@@ -53,18 +51,6 @@ class CreateMemeViewController: UIViewController, UIImagePickerControllerDelegat
         //start listening for keyboard show/hide notifications
         subscribeToKeyboardNotifications()
         updateNavBarButtonsStatus()
-        
-        //check if we received a meme from previous screen
-        if let meme = meme {
-            loadProvidedMemeData(meme: meme)
-            updateNavBarButtonsStatus()
-        }
-    }
-    
-    private func loadProvidedMemeData(meme: Meme) {
-        imageView.image = meme.originalImage
-        topTextField.text = meme.topText
-        bottomTextField.text = meme.bottomText
     }
     
     override func viewWillDisappear(_ animated: Bool) {
