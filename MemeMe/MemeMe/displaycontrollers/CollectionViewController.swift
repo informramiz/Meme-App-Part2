@@ -9,7 +9,8 @@
 import UIKit
 
 class CollectionViewController: UICollectionViewController {
-
+    private static let showMemeSegueIdentifier = "ShowMeme"
+    
     private var memes: [Meme] {
         return (UIApplication.shared.delegate as! AppDelegate).memes
     }
@@ -25,7 +26,7 @@ class CollectionViewController: UICollectionViewController {
     }
     
     @objc private func onAddClick() {
-        performSegue(withIdentifier: "ShowMeme", sender: nil)
+        performSegue(withIdentifier: CollectionViewController.showMemeSegueIdentifier, sender: nil)
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -40,6 +41,15 @@ class CollectionViewController: UICollectionViewController {
     }
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "ShowMeme", sender: nil)
+        performSegue(withIdentifier: CollectionViewController.showMemeSegueIdentifier, sender: memes[indexPath.row])
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let meme = sender as? Meme
+        
+        if let meme = meme {
+            let destination = segue.destination as! CreateMemeViewController
+            destination.meme = meme
+        }
     }
 }
