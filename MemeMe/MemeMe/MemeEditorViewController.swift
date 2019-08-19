@@ -183,7 +183,7 @@ class CreateMemeViewController: UIViewController, UIImagePickerControllerDelegat
         }
         
         if bottomTextField.text!.isEmpty {
-            bottomTextField.text = "Bottom"
+            bottomTextField.text = "BOTTOM"
         }
     }
     
