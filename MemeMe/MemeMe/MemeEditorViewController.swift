@@ -56,6 +56,7 @@ class CreateMemeViewController: UIViewController, UIImagePickerControllerDelegat
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         //stop listening to keyboard show/hide notifications
+        unsubscribeToKeyboardNotifications()
     }
     
     //sets the status of nav buttons to enabled/disabled depending on if image is loaded or not
