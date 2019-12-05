@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Fv8-zI-U23">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Fv8-zI-U23">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -92,7 +90,7 @@
                     </collectionView>
                     <navigationItem key="navigationItem" title="Sent Memes" id="bSV-Ji-Zge"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="OpenMemeEditor" id="WsK-IR-aQx"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="OpenMemeEditor" modalPresentationStyle="fullScreen" id="WsK-IR-aQx"/>
                         <segue destination="AIO-5r-5mE" kind="show" identifier="ShowMemeDetail" id="K6Y-pf-bNa"/>
                     </connections>
                 </collectionViewController>
@@ -113,11 +111,11 @@
                                 <rect key="frame" x="0.0" y="28" width="414" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3ZN-3n-1Sr" id="Gzk-ud-ZSw">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="99.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eP4-GQ-Kas">
-                                            <rect key="frame" x="4" y="-0.5" width="100" height="100.5"/>
+                                            <rect key="frame" x="4" y="0.0" width="100" height="100"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="100" id="8tj-7G-Fhd"/>
                                                 <constraint firstAttribute="height" constant="100" id="PqL-g5-qiJ"/>
@@ -151,7 +149,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Sent Memes" id="v22-OT-ZZM"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="OpenMemeEditor" id="mbp-EL-h2U"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="OpenMemeEditor" modalPresentationStyle="fullScreen" id="mbp-EL-h2U"/>
                         <segue destination="AIO-5r-5mE" kind="show" identifier="ShowMemeDetail" id="kiA-jE-Ihl"/>
                     </connections>
                 </tableViewController>
@@ -209,11 +207,11 @@
                                 </items>
                             </navigationBar>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cJw-56-v6u">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="730"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </imageView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7od-42-9Yi" userLabel="Media Options Toolbar">
-                                <rect key="frame" x="32" y="813" width="350" height="49"/>
+                                <rect key="frame" x="32" y="818" width="350" height="44"/>
                                 <items>
                                     <barButtonItem title="Gallery" id="m1a-hN-DYs">
                                         <connections>
@@ -229,14 +227,14 @@
                                 </items>
                             </toolbar>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="TOP" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GZi-FN-vTg" userLabel="Top Field">
-                                <rect key="frame" x="0.0" y="88" width="414" height="30"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="34"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="BOTTOM" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qwZ-QE-CKh" userLabel="Bottom Field">
-                                <rect key="frame" x="0.0" y="783" width="414" height="30"/>
+                                <rect key="frame" x="0.0" y="784" width="414" height="34"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -314,7 +312,7 @@
         <image name="table" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="kiA-jE-Ihl"/>
+        <segue reference="K6Y-pf-bNa"/>
         <segue reference="mbp-EL-h2U"/>
     </inferredMetricsTieBreakers>
 </document>
